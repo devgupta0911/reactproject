@@ -1,6 +1,20 @@
 .App {
-  text-align: center;
+  height:100vh;
+  width:100vw;
+  /* background-color: black; */
 }
+
+body{
+    background-color: rgb(60, 185, 220);
+    margin: 0;
+    padding: 0;
+}
+
+/* .Sidebar{
+  height: 100%;
+  width: 800px;
+  background-color: rgb(218, 190, 190);
+} */
 
 .App-logo {
   height: 40vmin;
