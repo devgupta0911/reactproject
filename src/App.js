@@ -4,6 +4,7 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 // import Sidebar from './components/Sidebar';
 import Cards from './components/Cards';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     {<center><TextForm heading="Enter the text to analyze below"/></center> }
     {/* <About/>  */}
    </div>
+   <Footer/>
    </>
   );
 }

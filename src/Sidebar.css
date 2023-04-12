@@ -17,7 +17,7 @@
   .bm-burger-bars-hover {
     width: 36px;
     height: 30px;
-    background: #050505;
+    /* background: #050505; */
   }
   
   /* Position and sizing of clickable cross button */
@@ -66,6 +66,11 @@
   }
   
   /* Styling of overlay */
-  .bm-overlay {
-    background: #ef0505;
+  /* .bm-overlay {
+     background: #ef0505; 
+  } */
+
+  .menu-item{
+    list-style: none;
+    text-decoration: none;
   }
