@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(60, 185, 220);
+     background-color: #B8CFEC;  
     margin: 0;
     padding: 0;
 }
@@ -50,3 +50,10 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.newclass{
+  text-align: center;
+  color: blue;
+  border: 2px solid;
+}
+

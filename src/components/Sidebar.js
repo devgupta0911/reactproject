@@ -1,43 +1,63 @@
 import '../Sidebar.css';
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import PopupForm from './PopupForm';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-function Sidebar() {
+
+function Sidebar({handleclick}) {
+  const [value,setvalue]=useState("hello");
+   const handlechange =()=>{
+    setvalue("hi");
+    console.log(value);
+   }
   return (
+    <>
     <Menu>
       <li>
-      <span><a className="menu-item" href="/">
-        Overview</a></span>
+      <a className="menu-item" href="/">
+        Overview</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/salads">
-        Customers</a></span>
+      <a className="menu-item" href="/">
+        Customers</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/pizzas">
-        Companies</a></span>
+      <a className="menu-item" href="/">
+        Companies</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/desserts">
-        Account</a> </span>
+      <a className="menu-item" href="/">
+        Account</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/desserts">
-        Settings</a> </span>
+      <a className="menu-item" href="/">
+        Settings</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/desserts">
-        Login</a> </span>
+      <a className="menu-item" href="/">
+        Login</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/desserts">
-        Register</a> </span>
+      <a className="menu-item" href="/">
+        Register</a>
       </li>
       <li>
-      <span><a className="menu-item" href="/desserts">
-        Error</a> </span>
+      <a className="menu-item" href="/">
+        Error</a>
       </li>
+      <div >
+    {/* <Link to ="/tracker" >Tracker</Link> */}
+    {/* <span onclick={()=>handlechange()}>Tracker</span>
+      </div> */}
+      <button onClick={()=>handleclick()} className='n1'>Tracker</button>
+      </div>
+      {/* <div className="newclass">
+        <PopupForm/>
+      </div> */}
     </Menu>
+    </>
   )
 }
 

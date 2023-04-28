@@ -1,15 +1,17 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import PropTypes from 'prop-types'
 import Sidebar from './Sidebar'
+import PopupForm from './PopupForm';
 
 export default function Navbar(props) {
+  const [openModal, setOpenModal] =useState(false);
   let myStyle={
     padding: 15,
   }
   return (    
     <nav className="navbar navbar-expand-lg bg-body-tertiary" style={myStyle}>
   <div className="container-fluid ">
-    <a className="navbar-brand" href="#"><Sidebar/></a>
+    <a className="navbar-brand"><Sidebar handleclick={props.handleclick}/></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -24,6 +26,12 @@ export default function Navbar(props) {
         <li className="nav-item">
           <a className="nav-link" href="#" style={{fontSize:20}}>{props.aboutText}</a>
         </li>
+        <li>
+        {/* <div className="newclass">
+    <span onClick={ () => setOpenModal(true)}>Tracker</span>
+        {openModal&& <PopupForm/>}
+      </div> */}
+        </li>
       </ul>
       <span className="navbar-text" style={{fontSize:20}}>
         <b>User Portal </b>
@@ -31,6 +39,7 @@ export default function Navbar(props) {
     </div>
   </div>
 </nav>
+
   )
 }
 

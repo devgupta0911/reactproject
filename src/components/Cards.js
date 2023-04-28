@@ -1,29 +1,41 @@
 import React from 'react'
 import '../Cards.css'
+import {FcAbout} from "react-icons/fc";
+import { FcBusinessman ,FcAddDatabase, FcBullish} from "react-icons/fc";
+import Footer from './Footer'
+import TextForm from './TextForm';
+
 export default function Cards() {
     let myStyle={
         color:'black',
-        backgroundColor:'lightgrey',
+        backgroundColor:'Lavender',
         padding: '20px',
         margin: '45px',
         top: '20px',
-        height: '650px'
+        height: '650px',
       }
       let mStyle={
         color:'black',
-        backgroundColor:'lightblue',
-        padding: '15px',
-        margin: '20px',
+        backgroundColor:'Lavender',
+        padding: '5px',
+        margin: '8px',
         top: '0px',
         height: '200px'
       }
   return (
     <>
+     <h1>
+    <center><b>INVESTOPEDIA</b></center>
+   </h1>
+   <h4>DASHBOARD</h4>
     <div className="row">
   <div className="col-sm-3 " >
     <div className="card" style={mStyle}>
       <div className="card-body">
-        <h5 className="card-title">BUDGET</h5>
+        <div className="container" style={{fontSize:40}}>
+        <h5 className="card-title">BUDGET </h5>
+         <FcAbout/>
+         </div>
         <p className="card-text" style={{fontSize:30}}><b>$24k</b></p>
         <a href="#" className="btn btn-dark">More Information</a>
       </div>
@@ -32,16 +44,23 @@ export default function Cards() {
   <div className="col-sm-3 ">
    <div className="card"style={mStyle}>
       <div className="card-body">
+      <div className="container" style={{fontSize:50}}>
         <h5 className="card-title">TOTAL CUSTOMERS</h5>
+        <FcBusinessman/>
+      </div>
         <p className="card-text" style={{fontSize:30}}><b>$1.6k</b></p>
         <a href="#" className="btn btn-dark">More Information</a>
       </div>
+
     </div>
     </div>
     <div className="col-sm-3 ">
    <div className="card"style={mStyle}>
       <div className="card-body">
+      <div className="container" style={{fontSize:50}}>
         <h5 className="card-title">TASK PROGRESS</h5>
+        <FcAddDatabase/>
+      </div>
         <p className="card-text" style={{fontSize:30}}><b>75.5%</b></p>
         <a href="#" className="btn btn-dark">Go somewhere</a>
       </div>
@@ -50,7 +69,10 @@ export default function Cards() {
     <div className="col-sm-3 ">
    <div className="card"style={mStyle}>
       <div className="card-body">
+      <div className="container" style={{fontSize:50}}>
         <h5 className="card-title">TOTAL PROFIT</h5>
+        <FcBullish/>
+      </div>
         <p className="card-text"style={{fontSize:30}}><b>$15k</b></p>
         <a href="#" className="btn btn-dark">Go somewhere</a>
       </div>
@@ -82,6 +104,10 @@ export default function Cards() {
     </div>
 </div>
 </div>
+<div className="container ">
+    {<center><TextForm heading="Enter the text to analyze below"/></center> }
+   </div>
+<Footer/>
     </>
   )
 }

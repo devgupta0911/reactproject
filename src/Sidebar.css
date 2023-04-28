@@ -1,3 +1,4 @@
+
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: relative;
@@ -9,16 +10,16 @@
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #131313f0;
+    background: #F6DAE4;
  
   }
   
   /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
+   .bm-burger-bars-hover {
     width: 36px;
     height: 30px;
-    /* background: #050505; */
-  }
+    background: #050505;
+  } 
   
   /* Position and sizing of clickable cross button */
    .bm-cross-button {
@@ -37,13 +38,13 @@
    .bm-menu-wrap {
     position: fixed;
     height: 100%;
-    top: 76px;
+    top: 0px;
     left: 0px;
   }
    
   /* General sidebar styles */
   .bm-menu {
-    background: #add8e6;
+    background: #F6DAE4;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   } 
@@ -71,6 +72,47 @@
   } */
 
   .menu-item{
+    color: black;
     list-style: none;
     text-decoration: none;
+  }
+
+    .overlay{
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+left:0;
+right:0;
+top:0;
+bottom:0;
+width: 100%;
+height: 100%;
+font-size: smaller;
+  }
+
+
+.Formbase{
+  width:300px;
+  height: 600px;
+  display:flex;
+  border: 2px solid #000;
+  flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+border-radius: 10px;
+position: fixed;
+ top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgb(251, 251, 253);
+}
+
+.n1{
+  font-size: 20px;
+  color: rgb(11, 11, 11);
+  background-color: #F6DAE4;
+  /* margin: 5px; */
+  display: flex;
+  border-color:#F6DAE4;
+  justify-content: center;
   }
